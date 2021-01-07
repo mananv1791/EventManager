@@ -1,0 +1,136 @@
+@font-face {
+  font-family: 'Satisfy', cursive;
+  src: url(https://fonts.googleapis.com/css2?family=Satisfy&display=swap);
+}
+
+.main {
+
+  left: 0%;
+  right: 43.75%;
+  top: 100%;
+  bottom: -177.78%;
+
+  /*background: linear-gradient(180deg, #020008 , #896AFF 99.81%);*/
+  background-repeat: no-repeat;
+  background-size:1920px 1080px;
+
+  transform: rotate(0deg);
+
+}
+
+.Left-rect {
+  position: absolute;
+  left: 0%;
+  right: 43.75%;
+  top: 100%;
+  bottom: -177.78%;
+
+  /*background: linear-gradient(#020008 20.36%, rgba(137, 106, 255, 0) 99.81%);*/
+
+}
+
+.EventManager {
+  text-align: center;
+  left: 35.57%;
+  right: 35.57%;
+  top: 2.13%;
+
+  font-family: Satisfy;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 90px;
+  line-height: 138px;
+
+  color: #B5B9FF;
+}
+
+.homepage {
+  text-align: center;
+  left: 42.71%;
+  right: 42.76%;
+  top: 25%;
+
+  font-family: Satisfy;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 72px;
+  line-height: 104px;
+
+  color: #8B6DFF;
+}
+
+.group4 {
+  position: absolute;
+  width: 350px;
+  height: 490px;
+  left: 221px;
+  top: 358px;
+}
+
+.rect{
+  position:absolute;
+  left: 11.51%;
+  right: 67.34%;
+  top: 33.15%;
+  bottom: 18.06%;
+
+  background: #DADCFF;
+}
+
+.text1 {
+  position: absolute;
+  left: 13.49%;
+  right: 69.27%;
+  top: 36.11%;
+  bottom: 58.7%;
+
+  font-family: Satisfy;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 52px;
+
+  color: #282828;
+}
+
+.line1 {
+  position: absolute;
+  left: 13.49%;
+  right: 69.27%;
+  top: 42.69%;
+  bottom: 57.31%;
+
+  border: 5px solid #282828;
+}
+
+
+
+
+
+/* pexels-andrew-wilus-5637984 1 */
+
+
+position: absolute;
+left: 13.49%;
+right: 69.32%;
+top: 46.67%;
+bottom: 20.51%;
+
+background: url(pexels-andrew-wilus-5637984.jpg);
+
+
+.group3 {
+  position: absolute;
+  width: 350px;
+  height: 490px;
+  left: 752px;
+  top: 358px;
+}
+
+.group2 {
+  position: absolute;
+  width: 350px;
+  height: 490px;
+  top: 357px;
+  left: 1293px;
+}
