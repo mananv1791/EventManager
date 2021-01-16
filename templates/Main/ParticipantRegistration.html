@@ -7,40 +7,8 @@
   </head>
   <body>
   {% block content %}
+
     
-    <form action="POST">
-      {% csrf_token %}
-
-      <label for="Eventname">Event Name</label>
-      <input type="text" name="Eventname"> 
-<p></p>
-      <label for="Desc">Description</label>
-      <input type="text" name="Description"> 
-<p></p>
-      <label for="Location">Location</label>
-      <input type="radio" name="LocationOnline"> &nbsp;
-      <label for="Online">Online</label> 
-      <input type="radio" name="LocationOffline"> 
-      <label for="Offline">Offline</label> &nbsp; 
-<p></p>
-      <label for="from">from</label>
-      <input type="datetime-local" name="Registrationdatetimefrom">
-      <label for="to">To</label>
-      <input type="datetime-local" name="Registrationdatetimeto">
-<p></p>
-      <label for="Deadline">Deadline</label>
-      <input type="datetime-local" name="Deadline">
-<p></p>
-      <label for="Email">Host E-mail</label>
-      <input type="email" name="Hoestemail">
-<p></p>
-      <label for="password">password</label>
-      <input type="password" name="Hostpassword">
-<p></p>
-      <input type="Submit" name="Submit">
-<p></p>
-
-    </form>
 
   {% endblock %}
   </body>

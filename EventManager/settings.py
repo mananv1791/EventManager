@@ -20,13 +20,14 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'event.apps.EventConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'event',
+
 ]
 
 MIDDLEWARE = [
@@ -117,8 +118,13 @@ STATICFILES_DIRS = [
 
 ]
 
-
-
 MEDIA_ROOT =  [
     os.path.join(BASE_DIR, "Pics"),
 ]
+
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.gmail.com',
+EMAIL_HOST_USER = 'mananv1791@gmail.com',
+EMAIL_HOST_PASSWORD = 'PARMAR1971',
+EMAIL_PORT = 587,
+EMAIL_USE_TLS = True,
