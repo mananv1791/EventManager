@@ -6,8 +6,9 @@ import datetime
 from .forms import ParticipantReg
 from .models import ParticipantReg
 from django.db import IntegrityError
-from django.core.mail import send_mail
-from twilio.rest import Client
+from django.core.mail import send_mail,EmailMessage
+from django.conf import settings
+
 
 def form(request):
     form = ParticipantReg(request.POST or None)
@@ -28,15 +29,15 @@ def EventReg(request):
                 if x!='csrfmiddlewaretoken':
                     GDict.update({x:y})
             print(f'\n{GDict}')
+            HostEmail = request.POST.get("Email")
+            
+            subject='Notification Check {Event Manager}'
+            message=f'Hi {HostEmail},\nthank you for Registration,\nHostEmail : {HostEmail} \n Contact Us at {settings.EMAIL_HOST_USER} for any queries '
+            email_from = settings.EMAIL_HOST_USER
+            recipient_list = [HostEmail]
+            send_mail(subject,message,email_from,recipient_list)
 
             ParticipantReg.objects.create(**GDict)
-            send_mail(
-                        'Django Test Mail',
-                        'This one is msg',
-                        'mananv1791@gmail.com',
-                        ['mananv17@gmail.com'],
-                        fail_silently=False,
-                    )
             return render(request,'Main/EventRegistration.html')
         else:
             return render(request,'Main/EventRegistration.html')
@@ -96,7 +97,7 @@ def EMail(request):
 def TwilioMessage(request,Nuber):
     # /usr/bin/env python
     # Download the twilio-python library from twilio.com/docs/libraries/python
-    
+
 
     # Find these values at https://twilio.com/user/account
     # To set up environmental variables, see http://twil.io/secure

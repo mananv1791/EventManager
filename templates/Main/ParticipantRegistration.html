@@ -4,12 +4,61 @@
   <head>
     <meta charset="utf-8">
     <title>Participant Registration</title>
+
+
+
   </head>
   <body>
   {% block content %}
+{% csrf_token %}
+    <form action="." method="POST">
 
-    
+      <label for="Name">Name: </label>
+      <input type="text" name="Name" placeholder="Your Name Here,">
+<p></p>
+      <label for="ContNumber">Contact No.: </label>
+      <input type="text" name="ContNumber" placeholder="">
+<p></p>
+      <label for="EmailID">Email ID: </label>
+      <input type="text" name="EmailID" placeholder="">
+<p></p>
+      <label for="Event">Event.</label>&nbsp;
+      <input type="radio" name="Event" id='001' value="SampleEvent"/> &nbsp;
+      <input type="radio" name="Event" id='002' value="SampleEvent"/>
+<p></p>
+      <label for="Registration-Type">Registration-Type</label>&nbsp;
+      <input type="radio" name="Ragistration-Type" onclick="NumPeople(0);" checked>Individual
+      <input type="radio" name="Ragistration-Type" onclick="NumPeople(1);"> Group
+<p></p>
+<div class="hid">
+  <label for="NumOfPeople" id="GroupPeopleLabel">Number Of People</label>
+  <input type="number" name="NumOfPeople" id="GroupPeople" min="2" placeholder="2">
+</div>
+  
 
+  
+<br>
+<input type="submit" name="" id="">
+
+    </form>
+    <script>
+      document.getElementById('GroupPeople').style.display = "none";
+        document.getElementById('GroupPeopleLabel').style.display = "none";
+      function NumPeople(x)
+      {
+        if(x==0)
+        {
+        document.getElementById('GroupPeople').style.display = "none";
+        document.getElementById('GroupPeopleLabel').style.display = "none";
+        }
+        else
+        {
+        document.getElementById('GroupPeople').style.display = "inline";
+        document.getElementById('GroupPeopleLabel').style.display = "inline";
+        }
+        return;
+      }
+    </script>
   {% endblock %}
   </body>
 </html>

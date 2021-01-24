@@ -2,14 +2,10 @@ from django.db import models
 
 
 class ParticipantReg(models.Model):
-    CHOICES = [
-    ('Online', 'Online'),
-    ('Offline', 'Offline')
-]
-    EventNumber = models.IntegerField(primary_key=True)
+    
     EventName = models.CharField(max_length=300)
     Description = models.CharField(max_length=500)
-    Location = models.CharField(max_length=7, choices=CHOICES,default='Online')
+    Location = models.CharField(max_length=200)
     RegFrom = models.DateTimeField()
     RegTo = models.DateTimeField()
     Deadline = models.DateTimeField()

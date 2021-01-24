@@ -103,21 +103,77 @@
   border: 5px solid #282828;
 }
 
+.popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.popup .popuptext {
+  visibility: hidden;
+  width: 160px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+
+  margin-left: -80px;
+}
+
+.popup .popuptext::after {
+  content: "";
+
+    position: absolute;
+ 
+top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+
+    border-color: #555 transparent
+transparent transparent;
+}
+
+/*
+Toggle this class when clicking on the popup container (hide and show the
+popup) */
+.popup .show {
+ 
+visibility: visible;
+  -webkit-animation:
+fadeIn 1s;
+  animation: fadeIn 1s
+}
+
+.Addanimation-fadeinthepopup{
+  @-webkit-keyframes fadeIn {
+      from {opacity: 0;}
+      to {opacity: 1;}
+    }
+    
+  @keyframes fadeIn {
+      from {opacity: 0;}
+      to {opacity:1 ;}
+    }
+    
+}
 
 
-
-
-/* pexels-andrew-wilus-5637984 1 */
-
-
-position: absolute;
+.pexels-andrew-wilus-56379841{
+  position: absolute;
 left: 13.49%;
 right: 69.32%;
 top: 46.67%;
 bottom: 20.51%;
 
 background: url(pexels-andrew-wilus-5637984.jpg);
-
+}
 
 .group3 {
   position: absolute;
