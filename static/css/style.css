@@ -1,192 +1,345 @@
-@font-face {
-  font-family: 'Satisfy', cursive;
-  src: url(https://fonts.googleapis.com/css2?family=Satisfy&display=swap);
+body {
+  font-family: 'Poppins',sans-serif;
+  position:static;
+  background-color: #0d0f1d;
+  margin: 0;
+  padding: 0;
+  color: white;
+  
 }
 
-.main {
-
-  left: 0%;
-  right: 43.75%;
-  top: 100%;
-  bottom: -177.78%;
-
-  /*background: linear-gradient(180deg, #020008 , #896AFF 99.81%);*/
-  background-repeat: no-repeat;
-  background-size:1920px 1080px;
-
-  transform: rotate(0deg);
-
-}
-
-.Left-rect {
+.Logo {
   position: absolute;
-  left: 0%;
-  right: 43.75%;
-  top: 100%;
-  bottom: -177.78%;
-
-  /*background: linear-gradient(#020008 20.36%, rgba(137, 106, 255, 0) 99.81%);*/
-
+  height: 100px;
+  width: 100px;
 }
 
-.EventManager {
-  text-align: center;
-  left: 35.57%;
-  right: 35.57%;
-  top: 2.13%;
-
-  font-family: Satisfy;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 90px;
-  line-height: 138px;
-
-  color: #B5B9FF;
+.header {
+  position: fixed;
+  margin-top: 0;
+  opacity: 0.9;
+  height: 100px;
+  width: 100%;
+  background-color: #0d0f1d;
 }
 
-.homepage {
-  text-align: center;
-  left: 42.71%;
-  right: 42.76%;
-  top: 25%;
-
-  font-family: Satisfy;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 72px;
-  line-height: 104px;
-
-  color: #8B6DFF;
+.Dashheader {
+  position: fixed;
+  margin-top: 0;
+  opacity: 0.9;
+  height: 100px;
+  width: 100%;
+  background: linear-gradient(180deg,purple,black);
 }
 
-.group4 {
+.Eventheader {
+  position: fixed;
+  margin-top: 0;
+  opacity: 0.9;
+  height: 100px;
+  width: 100%;
+  background: linear-gradient(180deg,purple,black);
+}
+
+.Partheader {
+  position: fixed;
+  margin-top: 0;
+  opacity: 0.9;
+  height: 100px;
+  width: 100%;
+  background: linear-gradient(180deg,purple,black);
+}
+
+.Hey-There {
+  position: fixed;
+  color: yellow;
+  margin-top: 350px;
+  margin-left: 90px;
+  opacity: 1;
+  font-size: 100px;
+  font-family: "Poppins", sans-serif;
+  display: inline;
+  text-decoration: none;
+}
+
+.Event-Manager {
+  position: fixed;
+  color: whitesmoke;
+  margin-left: 100px;
+  font-size: 30px;  
+  margin-top: 20px;
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+}
+
+.ParticipantRegistration {
+  position: fixed;
+  color: whitesmoke;
+  font-size: 30px;
+  margin-top: 20px;
+  margin-left: 870px;
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+}
+
+.EventRegistration {
+  position: fixed;
+  color: whitesmoke;
+  font-size: 30px;
+  margin-top: 20px;
+  margin-left: 1290px;
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+}
+
+.EventDashboard {
+  position: fixed;
+  color: whitesmoke;
+  font-size: 30px;
+  margin-top: 20px;
+  margin-left: 1630px;
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+}
+
+a:link :visited {
+  color: skyblue;
+  text-decoration: red;
+}
+
+a:hover {
+  color: yellow;
+  text-decoration: none;
+}
+
+a:active {
+  color: yellow;
+}
+
+redCircle {
   position: absolute;
-  width: 350px;
-  height: 490px;
-  left: 221px;
-  top: 358px;
+  height: 200px;
+  width: 200px;
+  margin-left: 750px;
+  margin-top: 450px;
+
+  background: white;
+  border-radius: 50%;
 }
-
-.rect{
-  position:absolute;
-  left: 11.51%;
-  right: 67.34%;
-  top: 33.15%;
-  bottom: 18.06%;
-
-  background: #DADCFF;
-}
-
-.text1 {
-  position: absolute;
-  left: 13.49%;
-  right: 69.27%;
-  top: 36.11%;
-  bottom: 58.7%;
-
-  font-family: Satisfy;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 36px;
-  line-height: 52px;
-
-  color: #282828;
-}
-
-.line1 {
-  position: absolute;
-  left: 13.49%;
-  right: 69.27%;
-  top: 42.69%;
-  bottom: 57.31%;
-
-  border: 5px solid #282828;
-}
-
-.popup {
-  position: relative;
-  display: inline-block;
-  cursor: pointer;
-}
-
-.popup .popuptext {
-  visibility: hidden;
-  width: 160px;
-  background-color: #555;
-  color: #fff;
-  text-align: center;
-  border-radius: 6px;
-  padding: 8px 0;
-  position: absolute;
-  z-index: 1;
-  bottom: 125%;
-  left: 50%;
-
-  margin-left: -80px;
-}
-
-.popup .popuptext::after {
-  content: "";
-
-    position: absolute;
- 
-top: 100%;
-  left: 50%;
-  margin-left: -5px;
-  border-width: 5px;
-  border-style: solid;
-
-    border-color: #555 transparent
-transparent transparent;
-}
-
 /*
-Toggle this class when clicking on the popup container (hide and show the
-popup) */
-.popup .show {
- 
-visibility: visible;
-  -webkit-animation:
-fadeIn 1s;
-  animation: fadeIn 1s
-}
+.footer {
+    position: relative;
+    height: 500px;
+    width: 100%;
+    background:#B5B9FF;
+}*/
 
-.Addanimation-fadeinthepopup{
-  @-webkit-keyframes fadeIn {
-      from {opacity: 0;}
-      to {opacity: 1;}
-    }
-    
-  @keyframes fadeIn {
-      from {opacity: 0;}
-      to {opacity:1 ;}
-    }
-    
-}
-
-
-.pexels-andrew-wilus-56379841{
+redCircle :hover {
+  object-position: center;
   position: absolute;
-left: 13.49%;
-right: 69.32%;
-top: 46.67%;
-bottom: 20.51%;
+  height: 200px;
+  width: 200px;
+  margin-left: 750px;
+  margin-top: 450px;
 
-background: url(pexels-andrew-wilus-5637984.jpg);
+  background: black;
+  border-radius: 50%;
 }
 
-.group3 {
+.purpleCircle
+{
   position: absolute;
-  width: 350px;
-  height: 490px;
-  left: 752px;
-  top: 358px;
+  margin-top: 350px;
+  margin-left: 690px;
+  width: 230px;
+  height: 230px;
+  background: #0D0F1D;
+  border: 5px solid #EB00FF;
+  border-radius: 50%;
 }
 
-.group2 {
+.totalEvents {
+  position:absolute;
+  margin-left: 100px;
+  margin-top: 610px;
+  margin-left: 745px;
+  font-size: 38px;
+  margin-top:100;
+  color: #EB00FF;
+  text-align: center;
+}
+
+.greenCircle
+{
   position: absolute;
-  width: 350px;
-  height: 490px;
-  top: 357px;
-  left: 1293px;
+  margin-top: 350px;
+  margin-left: 1100px;
+  width: 230px;
+  height: 230px;
+  background: #0D0F1D;
+  border: 5px solid #05FF00;
+  border-radius: 50%;
+}
+
+.upcomeingEvents {
+  position:absolute;
+  margin-left: 100px;
+  margin-top: 610px;
+  margin-left: 1116px;
+  font-size: 38px;
+  margin-top:100;
+  color: #05FF00;
+  text-align: center;
+}
+
+.redCircle
+{
+  position: absolute;
+  margin-top: 350px;
+  margin-left: 1510px;
+  width: 230px;
+  height: 230px;
+  background: #0D0F1D;
+  border: 5px solid #FF0000;
+  border-radius: 50%;
+}
+
+.currentEvents {
+  position:absolute;
+  margin-left: 100px;
+  margin-top: 610px;
+  margin-left: 1559px;
+  font-size: 38px;
+  margin-top:100;
+  color: #FF0000;
+  text-align: center;
+}
+
+.numbers {
+  position: absolute;
+  padding-right: 100px;
+  margin-left: 30px;
+  color: white;
+}
+
+
+.box {
+  font-family: 'Poppins',sans-serif;
+  position: relative;
+  padding-top: 20px;
+  margin-left: 650px;
+  text-align: center;
+  margin-top: 100px;
+  height: 250px;
+  width: 30%;
+  background-color: purple;
+  opacity: 0.9;
+  
+  border-radius: 10px;
+  z-index: -1;
+  
+  
+}
+
+
+.fix {
+  position: fixed;
+}
+
+.integrity {
+  font-size: 100px;
+  font-family: "Poppins", sans-serif;
+  margin-left: 100px;
+  margin-top: 500px;
+  color: #FF0000;
+}
+
+.ParticipantRegistrationForm {
+  margin-top: 200px;
+}
+
+
+
+hr {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: #05FF00;
+}
+
+
+.boxParticipant {
+  margin-top: 100px;
+  text-align: center;
+
+}
+
+.boxParticipant input {
+  size: 50px;
+  padding-left: 20px;
+  margin-bottom: 10px;
+  background-color: transparent;
+  outline: 0;
+  border-top: hidden;
+  border-left: hidden;
+  border-right: hidden;
+  border-color: yellow;
+}
+
+label {
+  font-size: 20px;
+  font-weight: 100;
+}
+
+.button {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0.16, rgb(207, 207, 207)), color-stop(0.79, rgb(252, 252, 252)));
+  background-image: -moz-linear-gradient(center bottom, rgb(207, 207, 207) 16%, rgb(252, 252, 252) 79%);
+  background-image: linear-gradient(to top, rgb(207, 207, 207) 16%, rgb(252, 252, 252) 79%); 
+  border: 1px solid #000;
+  
+  color: black;
+  text-decoration: none;
+}
+
+.boxParticipant input:focus{
+  border-color: yellowgreen;
+  font-size: 20px;
+  color:yellowgreen;
+  opacity: 1;
+}
+
+input{
+  background-color: yellow;
+  color: yellow;
+}
+
+.error {
+  text-align: center;
+  font-size: 60px;
+}
+
+
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 10px;
+}
+ 
+
+::-webkit-scrollbar-thumb {
+
+  background: purple; 
+  border-radius: 10px;
+}
+
+
+::-webkit-scrollbar-thumb:hover {
+  background: darkmagenta
+   
 }

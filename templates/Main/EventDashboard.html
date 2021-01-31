@@ -1,16 +1,27 @@
 {% extends 'Base.html' %}
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Participant Registration</title>
-  </head>
-  <body>
+
+
+
   {% block content %}
-    <h1>Hey Welcome to Event Dashboard</h1>
-    {% for Event in EvnetNumber %}
-    {{ ShowData.EventName }}
-    {% endfor %}
+<br>
+    {% for Event in EventsNameasdf %}
+
+
+  <div class="box">
+    
+    <b>Event Name </b>: {{ Event.EventName }} &nbsp; <p></p>
+    <b>Description</b> : {{ Event.Description }} &nbsp;<p></p>
+    <b>Location</b> : {{ Event.Location }} &nbsp;<p></p>
+    <b>Registrationn From</b>: {{ Event.RegFrom }} &nbsp;<p></p>
+    <b>Registration To</b>: {{ Event.RegTo }} &nbsp;<p></p>
+    <b>Deadline</b>: {{ Event.Deadline }} &nbsp; <p></p>
+    
+    <br>
+  </div>
+</div>
+
+      
+    {% endfor %} 
+  
   {% endblock %}
-  </body>
-</html>
+  

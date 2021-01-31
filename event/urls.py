@@ -7,8 +7,8 @@ urlpatterns = [
     path('',views.Homepage),
     path('Base',views.Homepage,name='Homepage'),
     path('ParticipantRegistration/',views.ParticipantRegistration, name='PR'),
-    path('Eventregistration/',views.EventReg, name='ER'),
+    path('Eventregistration/',views.EventRegistrationView, name='ER'),
     path('Eventdashboard/',views.EventDashboard, name='ED'),
-    path('form/',views.form),
+    path('integrity/',views.integrity),
 
 ]
